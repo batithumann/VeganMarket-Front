@@ -23,7 +23,7 @@ function Register() {
   };
 
   const register = async () => {
-    const urlServer = import.meta.env.BACKEND_URL;
+    const urlServer = process.env.BACKEND_URL;
     const endpoint = "/usuario";
     if (user.password === user.passwordRepeat) {
       try {
