@@ -24,7 +24,7 @@ function Login() {
         showConfirmButton: true,
         timer: 2000,
       });
-    const urlServer = "http://localhost:4000";
+    const urlServer = import.meta.env.BACKEND_URL;
     const endpoint = "/login";
     try {
       const usuario = {

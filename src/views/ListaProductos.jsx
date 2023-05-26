@@ -11,7 +11,7 @@ const ListaProductos = () => {
   useEffect(() => {
     const obtenerProductos = async () => {
       try {
-        const urlServer = "http://localhost:4000";
+        const urlServer = import.meta.env.BACKEND_URL;
         const endpoint = "/productos";
 
         const { data: productos } = await axios.get(urlServer + endpoint);

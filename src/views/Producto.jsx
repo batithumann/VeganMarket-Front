@@ -14,7 +14,7 @@ const Producto = () => {
   useEffect(() => {
     const obtenerProducto = async () => {
       try {
-        const urlServer = "http://localhost:4000";
+        const urlServer = import.meta.env.BACKEND_URL;
         const endpoint = "/productos/";
 
         const { data: producto } = await axios.get(urlServer + endpoint + id);

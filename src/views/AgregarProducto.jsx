@@ -29,7 +29,7 @@ const AgregarProducto = () => {
     event.preventDefault();
     if (!token) navigate("/");
     try {
-      const urlServer = "http://localhost:4000";
+      const urlServer = import.meta.env.BACKEND_URL;
       const endpoint = "/productos";
 
       await axios.post(urlServer + endpoint, producto, {

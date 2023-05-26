@@ -13,7 +13,7 @@ function Perfil() {
     useEffect(() => {
         const obtenerFavoritos = async () => {
             try {
-                const urlServer = "http://localhost:4000";
+                const urlServer = import.meta.env.BACKEND_URL;
                 const endpoint = "/usuario";
 
                 const { data } = await axios.get(urlServer + endpoint, {
