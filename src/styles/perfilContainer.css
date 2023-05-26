@@ -1,0 +1,28 @@
+.perfil-container {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-data-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.user-data-container img {
+    width: 13rem;
+    height: 13rem;
+}

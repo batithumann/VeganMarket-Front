@@ -1,0 +1,69 @@
+.contacto-container {
+    background-image: url("https://i.ibb.co/KqKrKVg/nordwood-themes-nq-Pe1juwcd-Q-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card {
+    max-width: 370px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contact-form {
+    padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    width: 90%;
+    height: 100%;
+}
+
+.name-email-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-email-container > div{
+    width: 45%;
+}
+
+.name-email-container > div > input{
+    width: 100%;
+}
+
+.enviar-button {
+    background-color: #436f1e;
+    border: 1px solid #426f1eb9;
+}
+
+.enviar-button:hover {
+    color: white;
+    background-color: #457a19;
+    border: 1px solid #426f1eb9;
+}
+
+@media (min-width: 600px) {
+    .contact-card {
+        margin-left: 2rem;
+        min-width: 85vh;
+        min-height: 70vh;
+    }
+
+    .contacto-container {
+        justify-content: start;
+    }
+
+}

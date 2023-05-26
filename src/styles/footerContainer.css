@@ -1,0 +1,13 @@
+.footer {
+    background-color: #212529;
+}
+
+.footer a {
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid whitesmoke;
+}

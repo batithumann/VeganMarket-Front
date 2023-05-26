@@ -1,0 +1,39 @@
+.hero {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fb/Broccoli_bunches.jpg"); */
+    background-image: url('../assets/imgs/hero_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-title {
+    width: 90%;
+    height: auto;
+    background-color: whitesmoke;
+    color: #1e2519db;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ver-productos-button {
+    color: whitesmoke;
+    border: 1px solid #426f1eb9;
+    background-color: #436f1e;
+}
+
+.ver-productos-button:hover {
+    color: white;
+    background-color: #457a19;
+}
+
+@media (min-width: 776px) {
+    .home-title {
+        width: 65%;
+    }
+}

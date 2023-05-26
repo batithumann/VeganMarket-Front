@@ -1,0 +1,177 @@
+body {
+  background-image: url("https://i.ibb.co/vsgGTJk/tijana-drndarski-d-Fo-OWRT97-0-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Glacial Indifference';
+}
+
+a:hover {
+  color: lightgray !important;
+}
+
+.lista-productos {
+  max-height: 95vh;
+  overflow-y: scroll;
+  justify-content: center;
+  margin: 2em auto;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: auto;
+}
+
+@media (min-width: 768px) {
+  .lista-productos {
+    margin: 2em auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: auto auto  ;
+  }
+
+  
+}
+
+@media (min-width: 992px) {
+  .lista-productos {
+    margin: 2em auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: auto auto auto ;
+  }
+
+  .detalle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .detalle-img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbar-vegano a{
+    margin: .5rem;
+  }
+}
+
+@media (min-width:1400px) {
+  .lista-productos {
+    margin: 2em auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media (min-width:1700px) {
+  .lista-productos {
+    margin: 2em auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+.price {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  margin:0;
+  display:inline;
+}
+
+.price::before {
+  content:"$";
+}
+
+
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  padding: 1em 1em 0 1em;
+
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+  max-width: 80%;
+  border: 0.5em solid rgb(245,242,238);
+  border-radius: 10px;
+  margin: 0 auto 1em;
+}
+
+.card-img {
+  height: 14em;
+  width: 100%;
+  background-position: center;
+}
+.card-title {
+  font-size: xx-large;
+}
+.card-img:hover, .card-title:hover, .price:hover {
+  cursor: pointer;
+}
+
+.btn-success {
+  border-radius: 100%;
+  height:1.8em;
+  width: 1.8em;
+  font-size: 2em;
+}
+
+button svg {
+  margin-left: -3px;
+}
+
+
+#navbar-vegano a{
+  color: whitesmoke;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.agregar {
+  background-color: #fff;
+  border-color: #fff;
+  color: #198754;
+}
+
+.favoritear {
+  background-color: #fff;
+  border-color: #fff;
+  color: rgb(171,59,62);
+}
+
+
+.favoritear:hover, .favoritear:active{
+  background-color: rgb(171,59,62) !important;
+  border-color: #fff !important;
+  color:#fff !important;
+}
+
+.product-descripcion {
+  margin: 3em 0;
+}
+
+.detalle-img {
+  text-align: center;
+}
+
+.detalle {
+  text-align: left;
+}
+
+.card-detalle-titulo {
+  display:flex;
+  justify-content: space-between;
+  align-items: self-end;
+}
+
+.product-descripcion p {
+  margin: 0.3em 0
+}
