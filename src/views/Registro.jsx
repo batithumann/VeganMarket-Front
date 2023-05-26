@@ -7,8 +7,6 @@ import "../styles/registerCard.css";
 import { Alert } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Context from "../Context";
-import { useContext } from "react";
 
 function Register() {
   const navigate = useNavigate();
@@ -23,18 +21,6 @@ function Register() {
     const valor = event.target.value;
     setUser({ ...user, [event.target.name]: valor });
   };
-
-  function successMesagge() {
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "Succesfull login",
-      showConfirmButton: false,
-      timer: 2000,
-    }).then(function () {
-      window.open("http://localhost:3000/productos", "_blank");
-    });
-  }
 
   const register = async () => {
     const urlServer = "http://localhost:4000";

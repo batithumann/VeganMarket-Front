@@ -30,7 +30,7 @@ const Favoritos = () => {
       }
     };
     obtenerProductos();
-  }, []);
+  }, [navigate]);
 
   return (
     <Container className="favoritos-container">

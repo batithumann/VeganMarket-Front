@@ -1,5 +1,5 @@
-import { Container, Image, Spinner } from "react-bootstrap";
-import { useContext, useEffect, useState } from "react";
+import { Container, Spinner } from "react-bootstrap";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import DetalleProducto from "../components/detalleProductos-components/DetalleProducto";
 import "../styles/productDetails.css";
@@ -26,7 +26,7 @@ const Producto = () => {
       }
     };
     obtenerProducto();
-  }, [id]);
+  }, [id, navigate]);
 
   return (
     <div className="detalle-producto-container">
