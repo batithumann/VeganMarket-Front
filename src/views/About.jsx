@@ -11,7 +11,7 @@ function About() {
             descripcion: "Apasionado por el mundo de la programación y la tecnología, Jesús es estudiante de Ingeniería en Computación y colaborador de comunidades de Software Libre y OpenSource. Les gusta enseñar y compartir conocimientos de tecnología",
         },
         {
-            nombre: "Walther Thuman Llermaly",
+            nombre: "Walter Thumann Llermaly",
             imagen: "https://i.ibb.co/x5dYT95/Whats-App-Image-2023-05-15-at-21-13-49-1.jpg",
             descripcion: "Especialista en análisis y procesamiento de datos, en la caja de herramientas de Walter encontramos skills de programación, habilidades analíticas y trabajo en equipo. A su pasión por los datos hoy suma el desarrollo de software.",
         },
