@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/agregarContainer.css"
+import "../styles/agregarContainer.css";
 
 const AgregarProducto = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const AgregarProducto = () => {
   });
   const token = localStorage.getItem("token");
 
-  useEffect(() => { }, []);
+  useEffect(() => {}, []);
 
   const handleChange = (event) => {
     const valor = event.target.value;
@@ -29,7 +29,7 @@ const AgregarProducto = () => {
     event.preventDefault();
     if (!token) navigate("/");
     try {
-      const urlServer = process.env.BACKEND_URL;
+      const urlServer = process.env.REACT_APP_BACKEND_URL;
       const endpoint = "/productos";
 
       await axios.post(urlServer + endpoint, producto, {
@@ -44,7 +44,7 @@ const AgregarProducto = () => {
   return (
     <Container style={{ paddingTop: "2em", paddingBottom: "5em" }}>
       <div className="agregar-container">
-        <Form >
+        <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Nombre</Form.Label>
             <Form.Control

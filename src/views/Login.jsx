@@ -24,35 +24,35 @@ function Login() {
         showConfirmButton: true,
         timer: 2000,
       });
-    const urlServer = process.env.BACKEND_URL;
+    const urlServer = process.env.REACT_APP_BACKEND_URL;
     const endpoint = "/login";
     try {
       const usuario = {
         email: user,
         password: userPassword,
-      }
-      const { data: token } = await axios.post(urlServer + endpoint, usuario)
-      localStorage.setItem("token", token)
-      localStorage.setItem("email", usuario.email)
-      setUsuario(usuario)
-      let timerInterval
+      };
+      const { data: token } = await axios.post(urlServer + endpoint, usuario);
+      localStorage.setItem("token", token);
+      localStorage.setItem("email", usuario.email);
+      setUsuario(usuario);
+      let timerInterval;
       Swal.fire({
-        title: 'Inicio de sesion exitoso!',
-        html: ' ',
-        icon: 'success',
+        title: "Inicio de sesion exitoso!",
+        html: " ",
+        icon: "success",
         timer: 1500,
         didOpen: () => {
-          Swal.showLoading()
+          Swal.showLoading();
         },
         willClose: () => {
-          clearInterval(timerInterval)
-        }
+          clearInterval(timerInterval);
+        },
       }).then((result) => {
         /* Read more about handling dismissals below */
         if (result.dismiss === Swal.DismissReason.timer) {
           navigate("/productos");
         }
-      })
+      });
     } catch (error) {
       Swal.fire({
         position: "center",

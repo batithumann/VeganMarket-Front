@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ProductoCard from "../components/producto-components/ProductoCard";
 // import productos from "../productos";
 import "../styles/productCard.css";
-import "../styles/favoritosContainer.css"
+import "../styles/favoritosContainer.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const Favoritos = () => {
     }
     const obtenerProductos = async () => {
       try {
-        const urlServer = process.env.BACKEND_URL;
+        const urlServer = process.env.REACT_APP_BACKEND_URL;
         const endpoint = "/favoritos";
 
         const { data: productos } = await axios.get(urlServer + endpoint, {

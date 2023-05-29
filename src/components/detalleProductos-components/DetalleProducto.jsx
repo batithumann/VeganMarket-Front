@@ -15,11 +15,9 @@ function DetalleProducto({ producto }) {
   const [favoritos, setFavoritos] = useState([]);
   const token = localStorage.getItem("token");
 
-  
-
   const favoritear = async () => {
     if (!token) navigate("/login");
-    const urlServer = process.env.BACKEND_URL;
+    const urlServer = process.env.REACT_APP_BACKEND_URL;
     const endpoint = "/favoritos";
     const body = {
       id_producto: producto.id,
@@ -48,7 +46,7 @@ function DetalleProducto({ producto }) {
   useEffect(() => {
     const obtenerFavoritos = async () => {
       try {
-        const urlServer = process.env.BACKEND_URL;
+        const urlServer = process.env.REACT_APP_BACKEND_URL;
         const endpoint = "/favoritos";
 
         const { data: favoritos } = await axios.get(urlServer + endpoint, {
@@ -66,10 +64,9 @@ function DetalleProducto({ producto }) {
     setLoading(false);
   }, [token]);
 
-  let funcionFavorito = esFavorito()
+  let funcionFavorito = esFavorito();
 
   useEffect(() => {
-    
     setFavorito(funcionFavorito);
   }, [favoritos, funcionFavorito]);
 

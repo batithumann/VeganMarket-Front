@@ -13,7 +13,7 @@ const ListaProductos = () => {
   useEffect(() => {
     const obtenerProductos = async () => {
       try {
-        const urlServer = process.env.BACKEND_URL;
+        const urlServer = process.env.REACT_APP_BACKEND_URL;
         console.log(process.env);
         console.log({ urlServer });
         const endpoint = "/productos";
