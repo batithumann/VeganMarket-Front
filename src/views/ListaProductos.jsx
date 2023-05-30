@@ -14,14 +14,11 @@ const ListaProductos = () => {
     const obtenerProductos = async () => {
       try {
         const urlServer = process.env.REACT_APP_BACKEND_URL;
-        console.log(process.env);
-        console.log({ urlServer });
         const endpoint = "/productos";
 
         const { data: productos } = await axios.get(urlServer + endpoint);
         setProductos(productos);
         setLoading(false);
-        console.log({ productos });
       } catch (error) {
         console.log({ error });
       }
