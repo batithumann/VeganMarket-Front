@@ -11,7 +11,7 @@ a:hover {
 }
 
 .lista-productos {
-  min-height: 95vh;
+  max-height: 95vh;
   overflow-y: scroll;
   justify-content: center;
   margin: 2em auto;
@@ -22,7 +22,6 @@ a:hover {
 
 @media (min-width: 768px) {
   .lista-productos {
-    min-height: 95vh;
     margin: 2em auto;
     display: grid;
     gap: 2em;
@@ -34,7 +33,6 @@ a:hover {
 
 @media (min-width: 992px) {
   .lista-productos {
-    min-height: 95vh;
     margin: 2em auto;
     display: grid;
     gap: 2em;
@@ -59,7 +57,6 @@ a:hover {
 
 @media (min-width:1400px) {
   .lista-productos {
-    min-height: 95vh;
     margin: 2em auto;
     display: grid;
     gap: 2em;
@@ -69,7 +66,6 @@ a:hover {
 
 @media (min-width:1700px) {
   .lista-productos {
-    min-height: 95vh;
     margin: 2em auto;
     display: grid;
     gap: 2em;
